@@ -1,0 +1,52 @@
+#Reference API document - https://avigilon.app.box.com/s/cpl2jg1b1rxb4yirer2tcrz1b7im9ucw
+
+# This is a list of variables and the value that is expected
+#Variable	Value
+plasecFname	                FirstName
+plasecLname	                LastName
+plasecidentityAddress	    StreetAddress
+plasecidentityTitle	        Title
+plasecidentityDepartment	Department
+plasecidentityCity	        City
+plasecidentityState	        State/Province
+plasecidentityZipcode	    ZipCode
+plasecidentityEmailaddress	EmailAddress
+plasecidentitySitelocation	SiteLocation
+plasecId	                ExternalSystemID
+plasecidentityRoleDN	    Role
+plasecIdstatus	            1/2
+plasecidentityPhone	        Phone number
+plasecidentityWorkphone	    Phone number
+
+
+#Example Code
+
+#Here we use JSON to create all the fields most common when creating a new identity in the ACM. This is a POST to create a new user. Fill in the empty "" with values
+
+https://acm1.osuf.org/identities.xml
+{
+  "plasecId": "",
+  "plasecidentityCity": "",
+  "plasecidentityZipcode": "",
+  "plasecidentityAddress": "",
+  "plasecIdstatus": 1,
+  "plasecidentityTitle": "",
+  "plasecLname": "",
+  "plasecFname": "",
+  "plasecidentityDepartment": "",
+  "plasecidentityWorkphone": "",
+  "plasecidentityPhone": "",
+  "plasecidentityState": "",
+  "plasecidentityEmailaddress": "",
+  "plasecidentitySitelocation": ""
+}
+
+
+
+
+
+#This is an example of a PUT that updates the middle name for a user
+https://acm1.osuf.org/identities/07fcbf6c0b224ebe.xml
+<identity>
+    <plasecMI>sailor</plasecMI>
+</identity>
