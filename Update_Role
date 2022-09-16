@@ -1,0 +1,7 @@
+# This is an explicit xml call so it requires the headers when done in Okta so it knows that it is XML and not JSON. This is finicky and must be done as an array so to add an additional role just add the additional line. This will replace all roles with whatever is in this call, yes that is dumb but I didn't write their API.
+
+
+<sel_members type="array">
+    <sel_member>cn=4da6ca7bae4a4cde,ou=roles,dc=plasec</sel_member>
+    <sel_member>cn=4da6ca7bae4a4cde,ou=roles,dc=plasec</sel_member>
+</sel_members>
